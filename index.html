@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--=============== FAVICON ===============-->
+	<link rel="shortcut icon" href="images/faviconIG.png" type="image/x-icon">
+	<!--=============== BOXICONS ===============-->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<!--=============== SWIPER CSS ===============-->
+	<link rel="stylesheet" href="files/swiper-bundle.min.css">
+
+	<!--=============== CSS ===============-->
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title> IGoneev портфолио </title>
+</head>
+
+<body>
+	<!--=============== HEADER ===============-->
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo">igoneev</a>
+			<div class="nav__menu">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">
+							<i class='bx bx-home-alt'></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">
+							<i class='bx bx-user'></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#skills" class="nav__link">
+							<i class='bx bx-book'></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#work" class="nav__link">
+							<i class='bx bx-briefcase-alt-2'></i>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#contact" class="nav__link">
+							<i class='bx bx-message-square-detail'></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- theme btn -->
+			<i class='bx bx-moon change-theme' id="theme-button"></i>
+		</nav>
+	</header>
+
+	<!--=============== MAIN ===============-->
+	<main class="main">
+		<!--=============== HOME ===============-->
+		<section class="home section" id="home">
+			<div class="home__container container grid">
+				<div class="home__data">
+					<span class="home__greeting">Привет, я</span>
+					<h1 class="home__name">Гонеев Илья</h1>
+					<h3 class="home__education">Frontend Developer</h3>
+
+					<div class="home__buttons">
+						<a download="" href="files/cv/resume.pdf" class="button button--ghost">Скачать резюме</a>
+						<a href="#about" class="button">Обо мне</a>
+					</div>
+
+
+				</div>
+				<div class="home__handle">
+					<img src="images/myphoto.png" alt="" aria-hidden="true" class="home__img">
+				</div>
+
+				<div class="home__social">
+					<a href="https://github.com/Davinci9T" target="_blank" class="home__social-link"><i class='bx bxl-github'></i></a>
+				</div>
+
+				<a href="#about" class="home__scroll">
+					<i class='bx bx-mouse home__scroll-icon'></i>
+				</a>
+			</div>
+		</section>
+
+		<!--=============== ABOUT ===============-->
+		<section class="about section" id="about">
+			<h2 class="section__title about-title">Обо мне</h2>
+			<div class="about__container container grid">
+				<img src="images/retroWave.jpg" alt="" class="about__img">
+
+				<div class="about__data">
+					<div class="about__info">
+						<div class="about__box">
+							<i class='bx bx-award about__icon'></i>
+							<h3 class="about__title">Обучаюсь в SKILLBOX</h3>
+							<span class="about__subtitle">1 год</span>
+						</div>
+						<div class="about__box">
+							<i class='bx bx-briefcase-alt about__icon'></i>
+							<h3 class="about__title">Выполнено</h3>
+							<span class="about__subtitle">15 + проектов</span>
+						</div>
+					</div>
+
+					<p class="about__description"> Я начинающий Frontend разработчик, занимаюсь созданием веб&#8209;страниц. Обучаюсь с начала 2021 года в онлайн&#8209;университете Skillbox. </p>
+
+					<a href="#contact" class="button">Мои контакты</a>
+				</div>
+			</div>
+		</section>
+
+		<!--=============== SKILLS ===============-->
+		<section class="skills section" id="skills">
+			<span class="section__subtitle">Мои спосбности</span>
+			<h2 class="section__title">Мои навыки</h2>
+
+			<div class="skills__container container grid">
+				<div class="skills__content">
+
+					<div class="skills__box">
+						<div class="skills__group">
+							<div class="skills__data">
+								<i class='bx bxs-badge-check'></i>
+								<div>
+									<h3 class="skills__name">HTML</h3>
+									<span class="skills__level">Basic</span>
+								</div>
+							</div>
+							<div class="skills__data">
+								<i class='bx bxs-badge-check'></i>
+								<div>
+									<h3 class="skills__name">CSS</h3>
+									<span class="skills__level">Advanced</span>
+								</div>
+							</div>
+							<div class="skills__data">
+								<i class='bx bxs-badge-check'></i>
+								<div>
+									<h3 class="skills__name">JavaScript</h3>
+									<span class="skills__level">Intermediate</span>
+								</div>
+							</div>
+						</div>
+						<div class="skills__group">
+							<div class="skills__data">
+								<i class='bx bxs-badge-check'></i>
+								<div>
+									<h3 class="skills__name">Bootstrap</h3>
+									<span class="skills__level">Elementary</span>
+								</div>
+							</div>
+							<div class="skills__data">
+								<i class='bx bxs-badge-check'></i>
+								<div>
+									<h3 class="skills__name">Git</h3>
+									<span class="skills__level">Intermediate</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!--=============== SERVICES ===============-->
+		<section class="services section">
+			<h2 class="section__title">Что я могу ?</h2>
+
+			<div class="services__container container grid">
+				<div class="services__card">
+					<h3 class="services__title">Frontend <br> development</h3>
+					<span class="services__button">посмотреть<i class='bx bx-right-arrow-alt'></i></span>
+					<div class="services__modal">
+						<div class="services__modal-content">
+							<i class='bx bx-x services__modal-close'></i>
+							<h3 class="services__modal-title">Frontend Разработка</h3>
+
+							<ul class="services__modal-list">
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Валидная, семантическая, кроссбраузерная и адаптивная вёрстка</p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">БЭМ</p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Знание препроцессра SCSS</p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Работа с GULP</p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Знаком с таким библиотеками как : jQuery, Swiperjs, GreenSock, MixItUp </p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Понимание вёрстки HTML-писем</p>
+								</li>
+								<li class="services__modal-item">
+									<i class='bx bx-check services__modal-icon'></i>
+									<p class="services__modal-info">Pixel Perfect</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--=============== WORK ===============-->
+		<section class="work section" id="work">
+			<h2 class="section__title">Мои работы</h2>
+			<div class="work__filters">
+				<span class="work__item active-work" data-filter='all'>Все</span>
+				<span class="work__item" data-filter='.layout'>Лэндинги</span>
+				<span class="work__item" data-filter='.bootstrap'>Bootstrap</span>
+			</div>
+
+			<div class="work__container container grid">
+				<div class="mix work__card layout">
+					<img src="images/work1.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Художественная галерея Blanchard</h3>
+					<a href="https://davinci9t.github.io/Blanchard/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+				<div class="mix work__card layout">
+					<img src="images/work2.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Фотостудия High Pass</h3>
+					<a href="https://davinci9t.github.io/HighPass/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+				<div class="mix work__card layout">
+					<img src="images/work3.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Евклид&#8209;проектные системы</h3>
+					<a href="https://davinci9t.github.io/evklid/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+
+				<div class="mix work__card layout">
+					<img src="images/work4.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Promo Cyberpunk 2077</h3>
+					<a href="https://davinci9t.github.io/promoCyberpunkWebsite/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+				<div class="mix work__card bootstrap">
+					<img src="images/work5.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Курсы 3D моделирования</h3>
+					<a href="https://davinci9t.github.io/skillbox-bootstrap/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+				<div class="mix work__card bootstrap">
+					<img src="images/work6.png" alt="work picture" class="work__img">
+					<h3 class="work__title">Простые вещи. Из бумаги</h3>
+					<a href="https://davinci9t.github.io/simple-layout/" target="_blank" class="work__button">Посмотреть <i class='bx bx-right-arrow-alt work__icon'></i></a>
+				</div>
+			</div>
+		</section>
+
+		<!--=============== CONTACT ===============-->
+		<section class="contact section" id="contact">
+			<h2 class="section__title">Свяжитесь со мной</h2>
+
+			<div class="contact__container container grid">
+				<div class="contact__content">
+					<h3 class="contact__title">Напишите мне</h3>
+					<div class="contact__info">
+						<div class="contact__card">
+							<i class='bx bxl-messenger contact__card-icon'></i>
+							<h3 class="contact__card-title">Messenger</h3>
+							<span class="contact__card-data">Гонеев Илья</span>
+							<a href="https://m.me/profile.php?id=100007318129299" target="_blank" class="contact__button">Сюда <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+						</div>
+						<div class="contact__card">
+							<i class='bx bxl-telegram contact__card-icon'></i>
+							<h3 class="contact__card-title">Telegram</h3>
+							<span class="contact__card-data">@somecitizen</span>
+							<a href="https://t.me/somecitizen" target="_blank" class="contact__button">Сюда <i class='bx bx-right-arrow-alt contact__button-icon'></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="contact__content">
+					<h3 class="contact__title">Напишите мне про ваш проект</h3>
+
+					<form action="" class="contact__form">
+						<div class="contact__form-div">
+							<label for="" class="contact__form-tag">Имя</label>
+							<input type="text" class="contact__form-input name" placeholder="ваше имя">
+						</div>
+						<div class="contact__form-div">
+							<label for="" class="contact__form-tag">Почта</label>
+							<input type="text" class="contact__form-input email" placeholder="ваш email">
+						</div>
+						<div class="contact__form-div contact__form-area">
+							<label for="" class="contact__form-tag">Проект</label>
+							<textarea name="" id="" cols="30" rows="10" class="contact__form-input message" placeholder="Опишите свой проект"></textarea>
+						</div>
+
+						<button type="submit" class="button send-btn" value="Send">Отправить сообщение</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--=============== FOOTER ===============-->
+	<footer class="footer">
+		<div class="footer__container container">
+			<h2 class="footer__title">IGONEEV</h2>
+			<ul class="footer__list">
+				<li class="footer__item">
+					<a href="#about" class="footer__link">ОБО МНЕ</a>
+				</li>
+				<li class="footer__item">
+					<a href="#work" class="footer__link">ПРОЕКТЫ</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("kJMlwl7LiEf95b1Fi");
+		})();
+	</script>
+	<!--=============== SCROLLREVEAL ===============-->
+	<script src="files/scrollreveal.min.js"></script>
+
+	<!--=============== SWIPER JS ===============-->
+	<script src="files/swiper-bundle.min.js"></script>
+
+	<!--=============== MIXITUP FILTER ===============-->
+	<script src="files/mixitup.min.js"></script>
+
+	<!--=============== MAIN JS ===============-->
+	<script src="js/app.min.js"></script>
+	<script src="files/main.js"></script>
+</body>
+
+</html>
