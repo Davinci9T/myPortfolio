@@ -10,11 +10,8 @@
 	<!--=============== BOXICONS ===============-->
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-	<!--=============== SWIPER CSS ===============-->
-	<link rel="stylesheet" href="files/swiper-bundle.min.css">
-
 	<!--=============== CSS ===============-->
-	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<title> IGoneev портфолио </title>
 </head>
@@ -291,18 +288,18 @@
 					<form action="" class="contact__form">
 						<div class="contact__form-div">
 							<label for="" class="contact__form-tag">Имя</label>
-							<input type="text" class="contact__form-input name" placeholder="ваше имя">
+							<input type="text" class="contact__form-input name" placeholder="ваше имя" id="toName">
 						</div>
 						<div class="contact__form-div">
 							<label for="" class="contact__form-tag">Почта</label>
-							<input type="text" class="contact__form-input email" placeholder="ваш email">
+							<input type="text" class="contact__form-input email" placeholder="ваш email" id="fromName">
 						</div>
 						<div class="contact__form-div contact__form-area">
 							<label for="" class="contact__form-tag">Проект</label>
-							<textarea name="" id="" cols="30" rows="10" class="contact__form-input message" placeholder="Опишите свой проект"></textarea>
+							<textarea name="" cols="30" rows="10" class="contact__form-input message" placeholder="Опишите свой проект" id="msg"></textarea>
 						</div>
 
-						<button type="submit" class="button send-btn" value="Send">Отправить сообщение</button>
+						<input type="submit" class="button send-btn" value="Отправить сообщение"></input>
 					</form>
 				</div>
 			</div>
@@ -324,24 +321,23 @@
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			emailjs.init("kJMlwl7LiEf95b1Fi");
-		})();
-	</script>
+
 	<!--=============== SCROLLREVEAL ===============-->
 	<script src="js/scrollreveal.min.js"></script>
-
-	<!--=============== SWIPER JS ===============-->
-	<script src="js/swiper-bundle.min.js"></script>
 
 	<!--=============== MIXITUP FILTER ===============-->
 	<script src="js/mixitup.min.js"></script>
 
 	<!--=============== MAIN JS ===============-->
 	<script src="js/app.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("kJMlwl7LiEf95b1Fi");
+		})();
+	</script>
 	<script src="js/main.js"></script>
 </body>
 

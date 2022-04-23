@@ -946,3 +946,8 @@ body.light-theme .nav__link .bx {
     border-radius: 0.5rem;
   }
 }
+
+input[type=submit] {
+  border: none;
+  cursor: pointer;
+}

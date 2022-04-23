@@ -1,1 +1,167 @@
-const _0x344472 = _0x539f; (function (_0x5ce15b, _0x5542c0) { const _0x8db090 = _0x539f, _0x25c34f = _0x5ce15b(); while (!![]) { try { const _0x5a7009 = -parseInt(_0x8db090(0xbe)) / 0x1 + parseInt(_0x8db090(0xe4)) / 0x2 * (-parseInt(_0x8db090(0xab)) / 0x3) + -parseInt(_0x8db090(0xd5)) / 0x4 + parseInt(_0x8db090(0xa7)) / 0x5 * (parseInt(_0x8db090(0xd8)) / 0x6) + -parseInt(_0x8db090(0xd2)) / 0x7 * (-parseInt(_0x8db090(0xe7)) / 0x8) + -parseInt(_0x8db090(0xd0)) / 0x9 + parseInt(_0x8db090(0xbb)) / 0xa * (parseInt(_0x8db090(0xd4)) / 0xb); if (_0x5a7009 === _0x5542c0) break; else _0x25c34f['push'](_0x25c34f['shift']()); } catch (_0x204bd0) { _0x25c34f['push'](_0x25c34f['shift']()); } } }(_0x45c6, 0x5609d)); function _0x539f(_0x4df282, _0x1fef34) { const _0x45c62f = _0x45c6(); return _0x539f = function (_0x539f0b, _0x397160) { _0x539f0b = _0x539f0b - 0xa4; let _0x252607 = _0x45c62f[_0x539f0b]; return _0x252607; }, _0x539f(_0x4df282, _0x1fef34); } function scrollHeader() { const _0x2a2908 = _0x539f, _0x28d4a7 = document[_0x2a2908(0xda)](_0x2a2908(0xcd)); if (this[_0x2a2908(0xa8)] >= 0x32) _0x28d4a7[_0x2a2908(0xb8)][_0x2a2908(0xd6)]('scroll-header'); else _0x28d4a7[_0x2a2908(0xb8)][_0x2a2908(0xb4)]('scroll-header'); } window[_0x344472(0xac)](_0x344472(0xe8), scrollHeader); const modalViews = document[_0x344472(0xad)](_0x344472(0xc5)), modalBtns = document[_0x344472(0xad)](_0x344472(0xde)), modalClose = document[_0x344472(0xad)](_0x344472(0xb0)); function _0x45c6() { const _0x269075 = ['section[id]', 'active-work', 'toggle', 'light', 'pageYOffset', '35bKDtHe', 'scrollY', 'active-link', 'reveal', '3uaZmwV', 'addEventListener', 'querySelectorAll', '.name', 'Сообщение\x20отправлено\x20🥳\x20отвечу\x20очень\x20скоро', '.services__modal-close', 'active-modal', '.email', 'bx\x20bx-moon', 'remove', 'light-theme', 'success', '.about-title', 'classList', '60px', 'кажется\x20поля\x20неправильно\x20заполнены', '68510toQkrh', 'dark', 'setItem', '487112CxTnYB', 'bx-sun', 'contains', 'Ок!', 'template_irojdqa', 'selected-theme', 'getAttribute', '.services__modal', 'theme-button', '.work__card', 'offsetTop', 'bx\x20bx-sun', 'send', '.message', '.nav__menu\x20a[href*=', 'header', '.home__handle', 'value', '3787164TepXCR', 'Ой!', '4553591TxEYnQ', '.about__img,\x20.about__data', '869rZhmia', '1967328tAHOiq', 'add', '.testimonial__container', '595824rTAqsD', 'preventDefault', 'getElementById', 'querySelector', 'click', 'body', '.services__button', 'top', 'selected-icon', '.home__data', 'service_8pcxidm', 'forEach', '269434mHxhpy', 'getItem', '.home__social,\x20.home__scroll', '8fegxfc', 'scroll']; _0x45c6 = function () { return _0x269075; }; return _0x45c6(); } let modal = function (_0x1e06aa) { const _0x2271df = _0x344472; modalViews[_0x1e06aa][_0x2271df(0xb8)][_0x2271df(0xd6)](_0x2271df(0xb1)); }; modalBtns['forEach']((_0x465a96, _0x3a194e) => { const _0x8947e6 = _0x344472; _0x465a96[_0x8947e6(0xac)]('click', () => { modal(_0x3a194e); }); }), modalClose['forEach'](_0x3f2d88 => { const _0x2f7cee = _0x344472; _0x3f2d88[_0x2f7cee(0xac)](_0x2f7cee(0xdc), () => { modalViews['forEach'](_0x9eab4d => { const _0x5e6585 = _0x539f; _0x9eab4d[_0x5e6585(0xb8)][_0x5e6585(0xb4)](_0x5e6585(0xb1)); }); }); }); let mixerPortfolio = mixitup('.work__container', { 'selectors': { 'target': _0x344472(0xc7) }, 'animation': { 'duration': 0x12c } }); const linkWork = document[_0x344472(0xad)]('.work__item'); function activeWork() { const _0x57119e = _0x344472; linkWork[_0x57119e(0xe3)](_0x12d66b => _0x12d66b[_0x57119e(0xb8)]['remove'](_0x57119e(0xea))), this[_0x57119e(0xb8)][_0x57119e(0xd6)](_0x57119e(0xea)); } linkWork[_0x344472(0xe3)](_0x1e35cb => _0x1e35cb[_0x344472(0xac)](_0x344472(0xdc), activeWork)); let swiperTestimonial = new Swiper(_0x344472(0xd7), { 'spaceBetween': 0x18, 'loop': !![], 'grabCursor': !![], 'pagination': { 'el': '.swiper-pagination', 'clickable': !![] }, 'breakpoints': { 0x240: { 'slidesPerView': 0x2 }, 0x300: { 'slidesPerView': 0x2, 'spaceBetween': 0x30 } } }); const sections = document['querySelectorAll'](_0x344472(0xe9)); function scrollActive() { const _0x141856 = _0x344472, _0x322bd7 = window[_0x141856(0xa6)]; sections[_0x141856(0xe3)](_0x5d0d8e => { const _0x4679b1 = _0x141856, _0x1bc4c5 = _0x5d0d8e['offsetHeight'], _0x36d989 = _0x5d0d8e[_0x4679b1(0xc8)] - 0x3a, _0x5a9396 = _0x5d0d8e[_0x4679b1(0xc4)]('id'); _0x322bd7 > _0x36d989 && _0x322bd7 <= _0x36d989 + _0x1bc4c5 ? document['querySelector']('.nav__menu\x20a[href*=' + _0x5a9396 + ']')[_0x4679b1(0xb8)][_0x4679b1(0xd6)]('active-link') : document[_0x4679b1(0xdb)](_0x4679b1(0xcc) + _0x5a9396 + ']')[_0x4679b1(0xb8)][_0x4679b1(0xb4)](_0x4679b1(0xa9)); }); } window[_0x344472(0xac)](_0x344472(0xe8), scrollActive); const themeButton = document['getElementById'](_0x344472(0xc6)), lightTheme = _0x344472(0xb5), iconTheme = _0x344472(0xbf), selectedTheme = localStorage[_0x344472(0xe5)](_0x344472(0xc3)), selectedIcon = localStorage[_0x344472(0xe5)](_0x344472(0xe0)), getCurrentTheme = () => document[_0x344472(0xdd)][_0x344472(0xb8)]['contains'](lightTheme) ? _0x344472(0xbc) : _0x344472(0xa5), getCurrentIcon = () => themeButton['classList'][_0x344472(0xc0)](iconTheme) ? _0x344472(0xb3) : _0x344472(0xc9); selectedTheme && (document['body'][_0x344472(0xb8)][selectedTheme === _0x344472(0xbc) ? _0x344472(0xd6) : _0x344472(0xb4)](lightTheme), themeButton[_0x344472(0xb8)][selectedIcon === 'bx\x20bx-moon' ? _0x344472(0xd6) : 'remove'](iconTheme)); themeButton['addEventListener']('click', () => { const _0x33fa72 = _0x344472; document[_0x33fa72(0xdd)]['classList']['toggle'](lightTheme), themeButton[_0x33fa72(0xb8)][_0x33fa72(0xa4)](iconTheme), localStorage[_0x33fa72(0xbd)](_0x33fa72(0xc3), getCurrentTheme()), localStorage['setItem'](_0x33fa72(0xe0), getCurrentIcon()); }); const sr = ScrollReveal({ 'origin': _0x344472(0xdf), 'distance': _0x344472(0xb9), 'duration': 0x9c4, 'delay': 0x190, 'mobile': ![] }); sr['reveal'](_0x344472(0xe1)), sr['reveal'](_0x344472(0xce), { 'delay': 0x2bc }), sr[_0x344472(0xaa)](_0x344472(0xe6), { 'delay': 0x384, 'origin': 'bottom' }), sr[_0x344472(0xaa)](_0x344472(0xb7), { 'delay': 0x258 }), sr[_0x344472(0xaa)](_0x344472(0xd3), { 'delay': 0x2bc }); function validate() { const _0x498e7d = _0x344472; let _0x4405b0 = document[_0x498e7d(0xdb)](_0x498e7d(0xae)), _0x1a6129 = document[_0x498e7d(0xdb)](_0x498e7d(0xb2)), _0xb10cd3 = document[_0x498e7d(0xdb)](_0x498e7d(0xcb)), _0x237b09 = document[_0x498e7d(0xdb)]('.send-btn'); _0x237b09[_0x498e7d(0xac)]('click', _0x28eff6 => { const _0x5f288e = _0x498e7d; _0x28eff6[_0x5f288e(0xd9)](), _0x4405b0[_0x5f288e(0xcf)] == '' || _0x1a6129[_0x5f288e(0xcf)] == '' || _0xb10cd3[_0x5f288e(0xcf)] == '' ? emptyerror() : (sendmail(_0x4405b0[_0x5f288e(0xcf)], _0x1a6129['value'], mdg[_0x5f288e(0xcf)]), success()); }); } validate(); function sendmail(_0x225c1c, _0x4616a8, _0x10e79e) { const _0x4f8064 = _0x344472; emailjs[_0x4f8064(0xca)](_0x4f8064(0xe2), _0x4f8064(0xc2), { 'to_name': _0x4616a8, 'from_name': _0x225c1c, 'message': _0x10e79e }); } function emptyerror() { const _0x31a782 = _0x344472; swal({ 'title': _0x31a782(0xd1), 'text': _0x31a782(0xba), 'icon': 'error' }); } function success() { const _0x43fa24 = _0x344472; swal({ 'title': _0x43fa24(0xc1), 'text': _0x43fa24(0xaf), 'icon': _0x43fa24(0xb6) }); }
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader() {
+  const header = document.getElementById('header')
+  // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader);
+
+/*=============== SERVICES MODAL ===============*/
+
+const modalViews = document.querySelectorAll('.services__modal'),
+  modalBtns = document.querySelectorAll('.services__button'),
+  modalClose = document.querySelectorAll('.services__modal-close')
+
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((mb, i) => {
+  mb.addEventListener('click', () => {
+    modal(i)
+  })
+})
+
+modalClose.forEach((mc) => {
+  mc.addEventListener('click', () => {
+    modalViews.forEach((mv) => {
+      mv.classList.remove('active-modal')
+    })
+  })
+})
+
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
+
+let mixerPortfolio = mixitup('.work__container', {
+  selectors: {
+    target: '.work__card'
+  },
+  animation: {
+    duration: 300
+  }
+});
+
+/* Link active work */
+
+const linkWork = document.querySelectorAll('.work__item')
+
+function activeWork() {
+  linkWork.forEach(l => l.classList.remove('active-work'))
+  this.classList.add('active-work')
+}
+
+linkWork.forEach(l => l.addEventListener('click', activeWork))
+
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+  const scrollY = window.pageYOffset
+
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute('id')
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+    } else {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+    }
+  })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*=============== LIGHT light THEME ===============*/
+
+const themeButton = document.getElementById('theme-button')
+const lightTheme = 'light-theme'
+const iconTheme = 'bx-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the light-theme class
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
+  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+  // Add or remove the light / icon theme
+  document.body.classList.toggle(lightTheme)
+  themeButton.classList.toggle(iconTheme)
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
+});
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true,
+  mobile: false,
+})
+
+sr.reveal(`.home__data`)
+sr.reveal(`.home__handle`, { delay: 700 })
+sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
+sr.reveal(`.about-title`, { delay: 600, })
+sr.reveal(`.about__img, .about__data`, { delay: 700, })
+
+// email js
+function validate() {
+  let name = document.querySelector('.name')
+  let email = document.querySelector('.email')
+  let msg = document.querySelector('.message')
+  let sendBtn = document.querySelector('.send-btn')
+
+  sendBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (name.value == "" || email.value == "" || msg.value == "") {
+      emptyerror();
+    } else {
+      sendmail(name.value, email.value, msg.value);
+      success();
+    }
+  });
+}
+validate();
+
+
+function emptyerror() {
+  swal({
+    title: "Ой!",
+    text: "кажется поля неправильно заполнены",
+    icon: "error",
+  })
+}
+
+function success() {
+  swal({
+    title: "Ок!",
+    text: "Сообщение отправлено 🥳 отвечу очень скоро",
+    icon: "success",
+  })
+}
+
+function sendmail(name, email, msg) {
+  emailjs.send("service_8pcxidm", "template_irojdqa", {
+    from_name: email,
+    to_name: name,
+    message: msg,
+  });
+}
