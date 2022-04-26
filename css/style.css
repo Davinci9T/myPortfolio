@@ -479,9 +479,6 @@ body.light-theme .nav__link .bx {
   transition: transform 0.2s ease-in-out;
 }
 
-.services {
-  /* Services modal */
-}
 .services__container {
   gap: 1.5rem;
   padding-top: 1rem;
