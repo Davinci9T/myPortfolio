@@ -1,135 +1,171 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
-  const header = document.getElementById('header')
+  const header = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  if (this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+  if (this.scrollY >= 50) header.classList.add("scroll-header");
+  else header.classList.remove("scroll-header");
 }
-window.addEventListener('scroll', scrollHeader);
+window.addEventListener("scroll", scrollHeader);
 
-/*=============== SERVICES MODAL ===============*/
+/*=============== SKILLS MODAL ===============*/
 
-const modalViews = document.querySelectorAll('.services__modal'),
-  modalBtns = document.querySelectorAll('.services__button'),
-  modalClose = document.querySelectorAll('.services__modal-close')
+const modalViews = document.querySelectorAll(".skills__modal"),
+  modalBtns = document.querySelectorAll(".skills__button"),
+  modalClose = document.querySelectorAll(".skills__modal-close");
 
 let modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active-modal')
-}
+  modalViews[modalClick].classList.add("active-modal");
+};
 
 modalBtns.forEach((mb, i) => {
-  mb.addEventListener('click', () => {
-    modal(i)
-  })
-})
-
-modalClose.forEach((mc) => {
-  mc.addEventListener('click', () => {
-    modalViews.forEach((mv) => {
-      mv.classList.remove('active-modal')
-    })
-  })
-})
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
-let mixerPortfolio = mixitup('.work__container', {
-  selectors: {
-    target: '.work__card'
-  },
-  animation: {
-    duration: 300
-  }
+  mb.addEventListener("click", () => {
+    modal(i);
+  });
 });
 
-/* Link active work */
-
-const linkWork = document.querySelectorAll('.work__item')
-
-function activeWork() {
-  linkWork.forEach(l => l.classList.remove('active-work'))
-  this.classList.add('active-work')
-}
-
-linkWork.forEach(l => l.addEventListener('click', activeWork))
-
+modalClose.forEach((mc) => {
+  mc.addEventListener("click", () => {
+    modalViews.forEach((mv) => {
+      mv.classList.remove("active-modal");
+    });
+  });
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
-const sections = document.querySelectorAll('section[id]')
+const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
-  const scrollY = window.pageYOffset
+  const scrollY = window.pageYOffset;
 
-  sections.forEach(current => {
+  sections.forEach((current) => {
     const sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute('id')
+      sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.add("active-link");
     } else {
-      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+      document
+        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .classList.remove("active-link");
     }
-  })
+  });
 }
-window.addEventListener('scroll', scrollActive)
+window.addEventListener("scroll", scrollActive);
 
 /*=============== LIGHT light THEME ===============*/
 
-const themeButton = document.getElementById('theme-button')
-const lightTheme = 'light-theme'
-const iconTheme = 'bx-sun'
+const lightStyles = document.querySelectorAll(
+  "link[rel=stylesheet][media*=prefers-color-scheme][media*=light]"
+);
+const darkStyles = document.querySelectorAll(
+  "link[rel=stylesheet][media*=prefers-color-scheme][media*=dark]"
+);
+const darkSchemeMedia = matchMedia("(prefers-color-scheme: dark)");
+const switcherRadios = document.querySelectorAll(".switcher__radio");
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+function setupSwitcher() {
+  const savedScheme = getSavedScheme();
 
-// We obtain the current theme that the interface has by validating the light-theme class
-const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
+  if (savedScheme !== null) {
+    const currentRadio = document.querySelector(
+      `.switcher__radio[value=${savedScheme}]`
+    );
+    currentRadio.checked = true;
+  }
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+  [...switcherRadios].forEach((radio) => {
+    radio.addEventListener("change", (event) => {
+      setScheme(event.target.value);
+    });
+  });
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-  // Add or remove the light / icon theme
-  document.body.classList.toggle(lightTheme)
-  themeButton.classList.toggle(iconTheme)
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem('selected-theme', getCurrentTheme())
-  localStorage.setItem('selected-icon', getCurrentIcon())
-});
+function setupScheme() {
+  const savedScheme = getSavedScheme();
+  const systemScheme = getSystemScheme();
+
+  if (savedScheme === null) return;
+
+  if (savedScheme !== systemScheme) {
+    setScheme(savedScheme);
+  }
+}
+
+function setScheme(scheme) {
+  switchMedia(scheme);
+
+  if (scheme === "auto") {
+    clearScheme();
+  } else {
+    saveScheme(scheme);
+  }
+}
+
+function switchMedia(scheme) {
+  let lightMedia;
+  let darkMedia;
+
+  if (scheme === "auto") {
+    lightMedia = "(prefers-color-scheme: light)";
+    darkMedia = "(prefers-color-scheme: dark)";
+  } else {
+    lightMedia = scheme === "light" ? "all" : "not all";
+    darkMedia = scheme === "dark" ? "all" : "not all";
+  }
+
+  [...lightStyles].forEach((link) => {
+    link.media = lightMedia;
+  });
+
+  [...darkStyles].forEach((link) => {
+    link.media = darkMedia;
+  });
+}
+
+function getSystemScheme() {
+  const darkScheme = darkSchemeMedia.matches;
+
+  return darkScheme ? "dark" : "light";
+}
+
+function getSavedScheme() {
+  return localStorage.getItem("color-scheme");
+}
+
+function saveScheme(scheme) {
+  localStorage.setItem("color-scheme", scheme);
+}
+
+function clearScheme() {
+  localStorage.removeItem("color-scheme");
+}
+
+setupSwitcher();
+setupScheme();
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 
 const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
+  origin: "top",
+  distance: "60px",
   duration: 2500,
   delay: 400,
   // reset: true,
   mobile: false,
-})
-
-sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, { delay: 700 })
-sr.reveal(`.home__social, .home__scroll`, { delay: 900, origin: 'bottom' })
-sr.reveal(`.about-title`, { delay: 600, })
-sr.reveal(`.about__img, .about__data`, { delay: 700, })
+});
 
 // email js
 function validate() {
-  let name = document.querySelector('.name')
-  let email = document.querySelector('.email')
-  let msg = document.querySelector('.message')
-  let sendBtn = document.querySelector('.send-btn')
+  let name = document.querySelector(".name");
+  let email = document.querySelector(".email");
+  let msg = document.querySelector(".message");
+  let sendBtn = document.querySelector(".send-btn");
 
-  sendBtn.addEventListener('click', (e) => {
+  sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
     if (name.value == "" || email.value == "" || msg.value == "") {
       emptyerror();
@@ -141,13 +177,12 @@ function validate() {
 }
 validate();
 
-
 function emptyerror() {
   swal({
     title: "Ой!",
     text: "кажется поля неправильно заполнены",
     icon: "error",
-  })
+  });
 }
 
 function success() {
@@ -155,7 +190,7 @@ function success() {
     title: "Ок!",
     text: "Сообщение отправлено 🥳 отвечу очень скоро",
     icon: "success",
-  })
+  });
 }
 
 function sendmail(name, email, msg) {
